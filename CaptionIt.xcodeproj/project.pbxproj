@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D9C0E9C2D03528CBB2362BC /* Pods_CaptionIt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA8D32620C3AD451047A2C80 /* Pods_CaptionIt.framework */; };
 		D94587831FFC297200FC03BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94587821FFC297200FC03BD /* AppDelegate.swift */; };
 		D94587851FFC297200FC03BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94587841FFC297200FC03BD /* ViewController.swift */; };
 		D94587881FFC297200FC03BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D94587861FFC297200FC03BD /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E064C337F1DE6797407AC3F /* Pods-CaptionIt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CaptionIt.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CaptionIt/Pods-CaptionIt.debug.xcconfig"; sourceTree = "<group>"; };
+		6FB93BDBCA831FABD57CA404 /* Pods-CaptionIt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CaptionIt.release.xcconfig"; path = "Pods/Target Support Files/Pods-CaptionIt/Pods-CaptionIt.release.xcconfig"; sourceTree = "<group>"; };
 		D945877F1FFC297200FC03BD /* CaptionIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CaptionIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D94587821FFC297200FC03BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D94587841FFC297200FC03BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		D94587891FFC297200FC03BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D945878C1FFC297200FC03BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D945878E1FFC297200FC03BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA8D32620C3AD451047A2C80 /* Pods_CaptionIt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CaptionIt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D9C0E9C2D03528CBB2362BC /* Pods_CaptionIt.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		991870A055D6189CC87795C7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DA8D32620C3AD451047A2C80 /* Pods_CaptionIt.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AAB1D3E6553FC8CFAE42CC0E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0E064C337F1DE6797407AC3F /* Pods-CaptionIt.debug.xcconfig */,
+				6FB93BDBCA831FABD57CA404 /* Pods-CaptionIt.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D94587761FFC297200FC03BD = {
 			isa = PBXGroup;
 			children = (
 				D94587811FFC297200FC03BD /* CaptionIt */,
 				D94587801FFC297200FC03BD /* Products */,
+				AAB1D3E6553FC8CFAE42CC0E /* Pods */,
+				991870A055D6189CC87795C7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D94587911FFC297200FC03BD /* Build configuration list for PBXNativeTarget "CaptionIt" */;
 			buildPhases = (
+				2CE988CD19081C549065A44D /* [CP] Check Pods Manifest.lock */,
 				D945877B1FFC297200FC03BD /* Sources */,
 				D945877C1FFC297200FC03BD /* Frameworks */,
 				D945877D1FFC297200FC03BD /* Resources */,
+				0768AFD5BF686DE03D4E7B49 /* [CP] Embed Pods Frameworks */,
+				400376AD43F2CBDFA2DA2F57 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,68 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0768AFD5BF686DE03D4E7B49 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CaptionIt/Pods-CaptionIt-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CaptionIt/Pods-CaptionIt-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2CE988CD19081C549065A44D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CaptionIt-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		400376AD43F2CBDFA2DA2F57 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CaptionIt/Pods-CaptionIt-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D945877B1FFC297200FC03BD /* Sources */ = {
@@ -272,6 +361,7 @@
 		};
 		D94587921FFC297200FC03BD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E064C337F1DE6797407AC3F /* Pods-CaptionIt.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +377,7 @@
 		};
 		D94587931FFC297200FC03BD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6FB93BDBCA831FABD57CA404 /* Pods-CaptionIt.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
